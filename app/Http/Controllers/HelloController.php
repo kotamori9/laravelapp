@@ -28,7 +28,7 @@ class HelloController extends Controller
             $body
             .tag('h1','Index') . tag('p','this is Index page')
             .'<a href="/hello/other">go to Other page</a>'
-            .$end
+            .$end;
         return $html;
     }
 
