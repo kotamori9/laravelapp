@@ -11,7 +11,7 @@ class HelloController extends Controller
     {
         $data = [
             'msg'=>'お名前を入力してください。',
-    ];
+        ];
         return view('hello.index',$data);
     }
 
@@ -19,7 +19,7 @@ class HelloController extends Controller
     {
         $msg = $request->msg;
         $data = [
-            'msg'=>'こんにちは、' . $msg . 'さん！',
+            'msg'=>'こんにちは、' .$msg .'さん！',
         ];
         return view('hello.index', $data);
     }
