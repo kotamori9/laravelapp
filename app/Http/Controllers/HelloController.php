@@ -7,5 +7,8 @@ use Illuminate\Http\Response;
 
 class HelloController extends Controller
 {
-    return view('hello.index');
+    public function index()
+    {
+        return view('hello.index');
+    }
 }
