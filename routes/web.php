@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('hello/{id?}', 'HelloController@index');
+Route::get('hello', 'HelloController@index');
