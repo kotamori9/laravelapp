@@ -11,8 +11,8 @@ class HelloController extends Controller
     {
         $data = [
             'msg'=>'これはコントローラーから渡されたメッセージです。',
-            'id'=>$request->$id
+            'id'=>$request->id
     ];
-        return view('hello.index',$data);
+    return view('hello.index',$data);
     }
 }
