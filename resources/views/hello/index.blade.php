@@ -8,8 +8,15 @@
 @section('content')
   <p>ここが本文のコンテンツです。</p>
   <p>必要なだけ記述できます。</p>
-@endsection
 
-@section('footer')
-copyright 2020 tuyano.
+  @component('components.message')
+    @slot('msg_title')
+    CAUTION!
+    @endslot
+
+    @slot('msg_content')
+    これはメッセージの表示です。
+    @endslot
+  @endcomponent
+  
 @endsection
