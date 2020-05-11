@@ -18,6 +18,6 @@ use App\Http\Middleware\HelloMiddleware;
 //     return view('welcome');
 // });
 
-Route::get('hello', 'HelloController@index')
-  ->middleware(HelloMiddleware::class);
+Route::get('hello', 'HelloController@index');
+  ->middleware('helo');
 Route::post('hello', 'HelloController@post');
